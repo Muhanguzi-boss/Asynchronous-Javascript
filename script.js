@@ -1,4 +1,4 @@
-const API_URL = "https://InvalidUrl that cannot exist";
+const API_URL = "https://api.github.com/users/ofallbrains";
 
 async function handlePromise() {
   try {
@@ -6,7 +6,7 @@ async function handlePromise() {
     const jsonValue = await newData.json();
     console.log(jsonValue);
   } catch (err) {
-    console.log(err);
+    console.log("Denyse!!! Your internet is too slow");
   }
 }
 
