@@ -6,5 +6,4 @@ let promise = new Promise(function (resolve, reject) {
   } else {
     reject();
   }
-})
-promise.then(function)
+});
