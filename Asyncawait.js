@@ -57,17 +57,21 @@ const bakeMixture = () => {
 };
 
 const bakeChocolateBrownies = async () => {
-  const taskOne = await preHeatOven();
-  console.log(taskOne);
+  try {
+    const taskOne = await preHeatOven();
+    console.log(taskOne);
 
-  const taskTwo = await addSugarAndChocoChips();
-  console.log(taskTwo);
+    const taskTwo = await addSugarAndChocoChips();
+    console.log(taskTwo);
 
-  const taskThree = await addFlourCocoAndSalt();
-  console.log(taskThree);
+    const taskThree = await addFlourCocoAndSalt();
+    console.log(taskThree);
 
-  const taskFour = await bakeMixture();
-  console.log(taskFour);
+    const taskFour = await bakeMixture();
+    console.log(taskFour);
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 bakeChocolateBrownies();
